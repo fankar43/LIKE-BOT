@@ -130,13 +130,13 @@ class LikeCommands(commands.Cog):
                     if data.get("status") == 1:
                         embed.description = (
                             f"\n"
-                            f"┌  ACCOUNT\n"
-                            f"├─ NICKNAME: {data.get('player', 'Unknown')}\n"
-                            f"├─ UID: {uid}\n"
-                            f"└─ RESULT:\n"
-                            f"   ├─ ADDED: +{data.get('likes_added', 0)}\n"
-                            f"   ├─ BEFORE: {data.get('likes_before', 'N/A')}\n"
-                            f"   └─ AFTER: {data.get('likes_after', 'N/A')}\n"
+                            f"📂 **ACCOUNT INFO**\n"
+        f"> 👤 **Nickname:** `{data.get('player', 'Unknown')}`\n"
+        f"> 🆔 **UID:** `{uid}`\n\n"
+        f"📊 **RESULT**\n"
+        f"> ✅ **Added:** `+{data.get('likes_added', 0)}`\n"
+        f"> ⏮️ **Before:** `{data.get('likes_before', 'N/A')}`\n"
+        f"> ⏭️ **After:** `{data.get('likes_after', 'N/A')}`\n"
                         )
                     else:
                         embed.description = "This UID has already received the maximum likes today.\nPlease wait 24 hours and try again"
