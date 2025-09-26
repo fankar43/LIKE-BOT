@@ -130,8 +130,8 @@ class LikeCommands(commands.Cog):
                     if data.get("status") == 1:
                         embed.description = (
                             f"\n"
-                            f"┌  ACCOUNT\n"
-                            f"├─ NICKNAME: {data.get('player', 'Unknown')}\n"
+                            f"`┌  ACCOUNT`\n"
+                            f"`├─ NICKNAME: {data.get('player', 'Unknown')}`\n"
                             f"├─ UID: {uid}\n"
                             f"└─ RESULT:\n"
                             f"   ├─ ADDED: +{data.get('likes_added', 0)}\n"
